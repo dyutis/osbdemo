@@ -219,7 +219,7 @@
             <xs:element name="CardPaymentType">
                 <xs:simpleType>
                     <xs:restriction base="xs:int">
-                        <xs:pattern value="[1-2]{1}"/>
+                        <xs:pattern value="[0-5]"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>

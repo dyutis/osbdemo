@@ -119,13 +119,13 @@
       <xt:replace>
         <xt:envValueType>Service URI</xt:envValueType>
         <xt:location>0</xt:location>
-        <xt:value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema">http://devlnx08:8001/soa-infra/services/default/ProcessOrder/receiveorder_client_ep</xt:value>
+        <xt:value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema">${{SOASERVER_URL_PREFIX}}/soa-infra/services/default/ProcessOrder/receiveorder_client_ep</xt:value>
       </xt:replace>
       <xt:replace>
         <xt:envValueType>Service URI Table</xt:envValueType>
         <xt:value xsi:type="tran:URITableType" xmlns:tran="http://www.bea.com/wli/sb/transports">
           <tran:tableElement>
-            <tran:URI>http://devlnx08:8001/soa-infra/services/default/ProcessOrder/receiveorder_client_ep</tran:URI>
+            <tran:URI>${{SOASERVER_URL_PREFIX}}/soa-infra/services/default/ProcessOrder/receiveorder_client_ep</tran:URI>
             <tran:weight>0</tran:weight>
           </tran:tableElement>
         </xt:value>
